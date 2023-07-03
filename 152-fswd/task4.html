@@ -1,0 +1,23 @@
+<h><b>About Functions</b></h>
+<script>
+      function MinMax(salaries) {
+  var minSalary = salaries[0];
+  var maxSalary = salaries[0];
+  for (var i = 1; i < salaries.length; i++) {
+    if (salaries[i] < minSalary) {
+      minSalary = salaries[i];
+    }
+    if (salaries[i] > maxSalary) {
+      maxSalary = salaries[i];
+    }
+  }
+  return {
+    min: minSalary,
+    max: maxSalary
+  };
+}
+  var salaries = [2000,5000,7000, 10000,50000];
+  var result1 = MinMax(salaries);
+  document.write("<br>Minimum Salary:", result1.min);
+  document.write("<br>Maximum Salary:", result1.max);
+</script>
